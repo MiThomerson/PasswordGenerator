@@ -1,0 +1,80 @@
+/* Star Selector (selects every element in the HTML file */
+* {
+    /* Includes the padding and border when setting the width or height for an element */
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #6495ed;
+    --color: #eef1ef;
+    --font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Setting the height to 100vh so the div will be centered vertically in the browser window */
+    height: 100vh;
+    /* Padding so it is not right up against the edge of the browser window */
+    padding: 25px;
+}
+
+h2 {
+    /* Top Right/Left Bottom */
+    margin: 10px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: var(--background-color);
+    /* Remove default border on buttons */
+    border: none;
+    /* Buttons don't inherit text color, set it within the element */
+    color: var(--color);
+    /* changes to the little hand icon */
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#container {
+    background-color: #639;
+    padding: 15px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+#result-container {
+    background-color: #243119;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 5px 10px 10px;
+    /* Flex used to position the span and button elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#clipboard {
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Google Fonts Open Sans (reg 400 and bold 700) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h2>Password Generator</h2>
+        <section id="result-container">
+            <!-- This span is where the password will be displayed -->
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <!-- Font Awesome Icon -->
+                <i class="fa-regular fa-clipboard"></i>
+            </button>
+        </section>
+
+        <section id="options">
+            <div class="option">
+                <label for="lowercase">Lowercase Letters</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="option">
+                <label for="uppercase">Uppercase Letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="option">
+                <label for="numbers">Numbers</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="option">
+                <label for="symbols">Symbols</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+            <div class="option">
+                <label for="length">Length</label>
+                <input type="number" id="length" value="10" min="4" max="20">
+            </div>
+        </section>
+        <button class="btn" id="generate">Generate Password</button>
+    </div>
+
+    <!-- Link to font awesome -->
+    <script src="https://kit.fontawesome.com/b8f9a59d50.js" crossorigin="anonymous"></script>
+    <!-- Link to JS file -->
+    <script src="./app.js"></script>
+</body>
+</html>
